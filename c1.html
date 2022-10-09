@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="uft-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+<title>world of ikun</title>
+<style>
+    #quanju{
+        padding:0%;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    }
+#kuai1{
+        margin-left: 0%;
+        margin-top: 0%;
+        padding:0%;
+        display: inline;
+        width: 17%;
+        height: 1000px;
+        float: left;
+        background-color:cornsilk;
+
+}
+#kuai2{
+    background-color:lightpink;
+  width: 1500px;
+    margin: 0;
+    display: inline;
+    float:left ;
+    text-align: center;
+    margin-left: auto;
+}
+#zuolan {
+            list-style-type: none;
+            margin-left: 0%;
+        margin-top: 0%;
+       padding:0%;
+    
+        }
+        #zuolan li a{
+        display: block;
+        color: black;
+        padding: 20px 50px;
+        text-decoration: none;
+    }
+    #zuolan li a.aaa{
+        background-color: aquamarine;
+        color:white;
+
+    }
+    
+    #zuolan li a:hover {
+        background-color:deepskyblue;
+        color:deeppink;
+    }
+    .cname {
+    width: 268px;
+        border: 2px solid #e2e2e2;
+        height: 50px;
+        padding: 0 0 0 40px;
+        background-image: url("sousuo.png"),url("yuyin.png");
+        background-repeat: no-repeat,no-repeat;
+        background-size: 45px,35px;
+        background-position:5px center,265px center;
+}
+.sousuo{
+    width: 96px;
+        border: 2px solid #e2e2e2;
+        height: 55px;
+        text-align: center;
+        cursor: pointer;
+}
+#qiehuan{
+    background-image: url("qiehuan.png");
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position:1px center,;
+    width: 200px;
+    margin-left: 25%;
+        border: 2px solid red;
+        height: 35px;
+        padding:0 0 0 30px;
+        cursor: pointer;
+        color:black;
+        background-color: white;
+}
+table, th, tr{  
+    border: 0;
+    width: 80%;
+}
+</style>
+    </head>
+    <body>
+        <div id="quanju">
+<div id="kuai1">
+    <form>
+        <input placeholder=" 请输入关键字" class="cname" type="text">
+        <input type="submit" value="搜索" class="sousuo">
+    </form>
+    <ul id="zuolan">
+        <li><a class="aaa" href="c1.html">主页</a></li>
+        <li><a id="one" href="c2.html">情人</a></li>
+        <li><a id="two" href="c4.html">只因你太美</a></li>
+        <li><a id="three" href="c3.html">wait wait wait</a></li>
+        <li><a id="four" href="#e">Home</a></li>
+        <li><a id="five" href="#e">Yong</a></li>
+        <li><a id="six" href="#e">迷</a></li>
+        <li><a id="seven" href="#e">重生</a></li>
+        <li><a id="eight" href="#e">hard to get</a></li>
+     </ul> 
+     <button id="qiehuan" type="button" onclick="myFunction()"><b>换一换</b></button>
+     <script>
+        function myFunction()
+        {
+            if( document.getElementById("one").innerHTML=="情人")
+            {
+            document.getElementById("one").innerHTML="没有意外";
+            document.getElementById("two").innerHTML="蒙着眼";
+            document.getElementById("three").innerHTML="Hug me";
+            document.getElementById("four").innerHTML="Its you";
+            document.getElementById("five").innerHTML="pull up";
+            document.getElementById("six").innerHTML="new world";
+            document.getElementById("seven").innerHTML="欲";
+            document.getElementById("eight").innerHTML="do not break my heart";
+            }
+            else{
+            document.getElementById("one").innerHTML="情人";
+            document.getElementById("two").innerHTML="只因你太美";
+            document.getElementById("three").innerHTML="wait wait wait";
+            document.getElementById("four").innerHTML="Home";
+            document.getElementById("five").innerHTML="Yong";
+            document.getElementById("six").innerHTML="迷";
+            document.getElementById("seven").innerHTML="重生";
+            document.getElementById("eight").innerHTML="hard to get";
+            }
+           
+        }
+     </script>
+</div>
+
+<div id="kuai2">
+    <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+        基本信息
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">唱，跳</a></li>
+          <li><a class="dropdown-item" href="#">rap</a></li>
+          <li><a class="dropdown-item" href="c5.html">篮球</a></li>
+        </ul>
+      </div>
+    <table>
+        <tr>
+            <td>中文名</td>
+            <td>蔡徐坤</td>
+        </tr>
+        <tr>
+            <td>名族</td>
+            <td>汉族</td>
+        </tr>
+        <tr>
+            <td>籍贯</td>
+            <td>浙江温州</td>
+        </tr>  
+         <tr>
+            <td>出生日期</td>
+            <td>1998.12.8</td>
+        </tr>
+        <tr>
+            <td>星座</td>
+            <td>狮子座</td>
+        </tr>
+        <tr>
+            <td>粉丝名</td>
+            <td style="font-size: 25px;"> <span class="badge rounded-pill bg-warning">ikun</span></td>
+        </tr>
+    </table>
+    <br>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- 指示符 -->
+       <div class="carousel-indicators">
+         <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+         <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+         <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+       </div>
+       
+       <!-- 轮播图片 -->
+       <div class="carousel-inner">
+         <div class="carousel-item active">
+           <img src="kunkun1.png" class="d-block rounded-circle" style="width:95%">
+         </div>
+         <div class="carousel-item">
+           <img src="kunkun2.png" class="d-block rounded-circle" style="width:95%">
+         </div>
+         <div class="carousel-item">
+           <img src="kunkun3.png" class="d-block rounded-circle" style="width:95%">
+         </div>
+       </div>
+       
+       <!-- 左右切换按钮 -->
+       <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon"></span>
+       </button>
+       <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+         <span class="carousel-control-next-icon"></span>
+       </button>
+     </div>
+  
+</div>
+</div>
+<script>
+    //function zhuce()
+    //{
+     //  var name= document.getElementById("zhanghao").innerHTML;
+       //var keyword= document.getElementById("mima").innerHTML;
+   // }
+</script>
+    </body>
+</html>

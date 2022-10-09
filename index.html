@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="uft-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+    <title>jackydong1999</title>
+    <style>
+        #quanjukuai{
+            width: 100%;
+            height: 100%;
+background-color:antiquewhite;
+margin: 0;
+padding: 0%;
+        }
+        #kuai1{
+            background-color: aliceblue;
+            margin-top: 0%;
+            margin-left: 0%;
+            border: 0;
+            padding: 0%;
+            
+            text-align: center;
+        }
+        #kuai2{
+        display: inline;
+        float:left;
+        margin-left: 0%;
+        margin-top: 0%;
+        padding:0%;
+     
+        width: 20%;
+
+        background-color:cornsilk;
+
+        }
+        .kuai3{
+            background-color:cadetblue;
+           display: inline;
+  
+           float:left;
+            margin-right: 0%;
+            border: 0;
+            padding: 0%;
+            width: 80%;
+            text-align:center;
+
+        }
+        #kuai4{
+            display: block;
+            float: left;
+            margin-top: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+            width: 80%;
+            border: 0;
+            padding: 0%;
+        }
+        #kuai4_1{
+            float: left;
+            background-color: white;
+            margin-left: 0%;
+        margin-top: 0%;
+       padding:0%;
+        width: 50%;
+            border: 0;
+            text-align: center;
+        }
+       #kuai4_2{
+            background-color:blanchedalmond;
+       float: left;
+       margin-left: 0%;
+        margin-top: 0%;
+       padding:0%;
+       border: 0;
+       width: 50%;
+       text-align: center;
+
+        }
+        #kuai5{
+            clear: both;
+            background-color: deepskyblue;
+            margin: 1000 0 0 0;
+            text-align: center;
+        }
+        #zuolan {
+            list-style-type: none;
+            margin-left: 0%;
+        margin-top: 0%;
+       padding:0%;
+        }
+        #zuolan li a{
+        display: block;
+        color: black;
+        padding: 20px 50px;
+        text-decoration: none;
+    }
+    #zuolan li a.aaa{
+        background-color: aquamarine;
+        color:white;
+
+    }
+    
+    #zuolan li a:hover {
+        background-color: green;
+        color: blue;
+    }
+    .youshang {
+        
+        list-style-type: none;
+        
+    }
+    .youshang li a{
+        text-decoration: none;
+
+    }
+    .youshang li a.aaa{
+        color: red;
+    }
+.cname {
+    width: 268px;
+        border: 2px solid #e2e2e2;
+        height: 50px;
+        padding: 0 0 0 40px;
+        background-image: url("sousuo.png"),url("yuyin.png");
+        background-repeat: no-repeat,no-repeat;
+        background-size: 45px,35px;
+        background-position:5px center,265px center;
+}
+.sousuo{
+    width: 96px;
+        border: 2px solid #e2e2e2;
+        height: 55px;
+        text-align: center;
+        cursor: pointer;
+}
+#qiehuan{
+    background-image: url("qiehuan.png");
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position:1px center,;
+    width: 200px;
+    margin-left: 25%;
+        border: 2px solid red;
+        height: 35px;
+        padding:0 0 0 30px;
+        cursor: pointer;
+        color:black;
+        background-color: #e2e2e2;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+    </style>
+</head>
+<body>
+<div id="quankukuai">
+<div id="kuai1">
+<h style="color:red;font-size: 55px;"><b>欢迎来到jackydong的网页</b></h>
+</div>
+<div id="kuai2">
+    <form>
+        <input placeholder=" 请输入关键字" class="cname" type="text">
+        <input type="submit" value="搜索" class="sousuo">
+    </form>
+    <ul id="zuolan">
+        <li><a class="aaa" href="#a">主页</a></li>
+        <li><a id="one" href="#b">虎牙</a></li>
+        <li><a id="two" href="#c">斗鱼</a></li>
+        <li><a id="three" href="#d">快手</a></li>
+        <li><a id="four" href="#e">抖音</a></li>
+        <li><a id="five" href="#e">小世界</a></li>
+        <li><a id="six" href="#e">爱奇艺</a></li>
+        <li><a id="seven" href="#e">优酷视频</a></li>
+        <li><a id="eight" href="#e">哔哩哔哩</a></li>
+     </ul> 
+     <button id="qiehuan" type="button" onclick="myFunction()">换一换</button>
+     <script>
+        function myFunction()
+        {
+            if( document.getElementById("one").innerHTML=="虎牙")
+            {
+            document.getElementById("one").innerHTML="腾讯视频";
+            document.getElementById("two").innerHTML="QQ看点";
+            document.getElementById("three").innerHTML="QQ影音";
+            document.getElementById("four").innerHTML="芒果TV";
+            document.getElementById("five").innerHTML="东方卫视";
+            document.getElementById("six").innerHTML="江苏卫视";
+            document.getElementById("seven").innerHTML="浙江卫视";
+            document.getElementById("eight").innerHTML="湖南卫视";
+            }
+            else{
+            document.getElementById("one").innerHTML="虎牙";
+            document.getElementById("two").innerHTML="斗鱼";
+            document.getElementById("three").innerHTML="快手";
+            document.getElementById("four").innerHTML="抖音";
+            document.getElementById("five").innerHTML="小世界";
+            document.getElementById("six").innerHTML="爱奇艺";
+            document.getElementById("seven").innerHTML="优酷视频";
+            document.getElementById("eight").innerHTML="哔哩哔哩";
+            }
+           
+        }
+     </script>
+</div>
+<div class="kuai3">
+    <ul class="youshang">
+        <li><a id="aaa" href="#a">用户登录login</a></li>
+        <li><a href="#b">账号登录   免密登录</a></li>
+        <li>账号：<input type="text"> </li>
+        <li>密码：<input type="text"> </li>
+        <li><input type="submit" onclick="location.href='c1.html'"> </li>
+     </ul>   
+   
+     </script>
+</div>
+<div id="kuai4">
+<div id="kuai4_1">
+    <br>
+    <button onclick="makeBig()">放大</button>
+    <button onclick="makeSmall()">缩小</button>
+    <button onclick="makenormal()">正常</button>
+    <br>
+    <video id="video1" width="512" controls autoplay>
+        <source src="2.mp4" type="video/mp4">
+    </video>
+    <script> 
+        var myVideo=document.getElementById("video1"); 
+            function makeBig()
+        { 
+            myVideo.width=800; 
+        }        
+            function makeSmall()
+        { 
+            myVideo.width=320; 
+        } 
+        function makenormal()
+        {
+            myVideo.width=512; 
+        }
+        </script> 
+</div>
+<div id="kuai4_2">
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- 指示符 -->
+       <div class="carousel-indicators">
+         <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+         <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+         <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+       </div>
+       
+       <!-- 轮播图片 -->
+       <div class="carousel-inner">
+         <div class="carousel-item active">
+           <img src="p1.png" class="d-block" style="width:100%">
+         </div>
+         <div class="carousel-item">
+           <img src="p2.png" class="d-block" style="width:100%">
+         </div>
+         <div class="carousel-item">
+           <img src="p3.png" class="d-block" style="width:100%">
+         </div>
+       </div>
+       
+       <!-- 左右切换按钮 -->
+       <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon"></span>
+       </button>
+       <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+         <span class="carousel-control-next-icon"></span>
+       </button>
+     </div>
+
+</div>
+</div>
+
+<div id="kuai5">
+    <h  style="color: red;"><b>四川大学机械工程学院lab124---马东</b></h>
+</div>
+
+
+</div>
+
+</body>
+</html>
